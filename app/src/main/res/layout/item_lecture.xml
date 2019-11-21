@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="1"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_toEndOf="@id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="31.01.2020"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="256dp"/>
+
+    <TextView
+        android:id="@+id/theme"
+        android:maxLines="2"
+        android:layout_below="@id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="List Views + Adapters + LayoutManagers"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/lector"
+        android:layout_below="@id/theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Evgeniy Chumak"
+        android:layout_margin="16dp"/>
+</RelativeLayout>
